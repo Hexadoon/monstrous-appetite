@@ -4,6 +4,9 @@
 [ext_resource path="res://Scripts/ReturnBut.gd" type="Script" id=2]
 
 [node name="Node2D" type="Node2D"]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="kitchen_layout_a_plateandbox_static" type="Sprite" parent="."]
 position = Vector2( 512, 294 )
@@ -14,9 +17,14 @@ __meta__ = {
 }
 
 [node name="ReturnBut" type="Button" parent="."]
-margin_right = 12.0
-margin_bottom = 20.0
+margin_left = 880.0
+margin_top = 16.0
+margin_right = 1003.0
+margin_bottom = 36.0
+text = "Return to Kitchen"
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="ReturnBut" to="ReturnBut" method="_on_ReturnBut_pressed"]
+
