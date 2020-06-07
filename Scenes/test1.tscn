@@ -1,0 +1,77 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Walker.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/WalkerRay.gd" type="Script" id=2]
+[ext_resource path="res://Backgrounds/kitchen_layout_alpha.jpg" type="Texture" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32, 32 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Walker" type="KinematicBody2D" parent="."]
+position = Vector2( 160, 96 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walker"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walker"]
+shape = SubResource( 1 )
+
+[node name="rayman" type="RayCast2D" parent="Walker"]
+collision_mask = 2049
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Walker/rayman"]
+modulate = Color( 0, 0, 0, 1 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+offset = Vector2( 0, 80 )
+
+[node name="Fridge" type="KinematicBody2D" parent="."]
+position = Vector2( 312, 192 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Fridge"]
+modulate = Color( 0.556863, 0.0156863, 0.0156863, 1 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fridge"]
+shape = SubResource( 2 )
+
+[node name="Sandwiches" type="KinematicBody2D" parent="."]
+position = Vector2( 512, 152 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Sandwiches"]
+modulate = Color( 0.964706, 0.34902, 0.956863, 1 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sandwiches"]
+shape = SubResource( 2 )
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = -1000
+z_as_relative = false
+format = 1
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="kitchen_layout_alpha" type="Sprite" parent="TileMap"]
+position = Vector2( 512, 298 )
+scale = Vector2( 0.533333, 0.544444 )
+texture = ExtResource( 3 )
