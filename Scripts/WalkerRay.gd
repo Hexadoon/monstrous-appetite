@@ -12,7 +12,7 @@ func get_input():
 			if (self.get_collider().name == "Fridge"):
 				get_tree().change_scene("res://Scenes/Fridge.tscn")
 			elif (self.get_collider().name == "Sandwiches"):
-				get_tree().change_scene("res://Scenes/Fridge.tscn")
+				get_tree().change_scene("res://Scenes/Sandwiches.tscn")
 
 
 
