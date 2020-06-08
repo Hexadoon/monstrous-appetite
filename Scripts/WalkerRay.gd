@@ -9,6 +9,7 @@ extends RayCast2D
 func get_input():
 	if (self.is_colliding()):
 		if Input.is_key_pressed(KEY_SPACE):
+			Global.pos = self.get_parent().position
 			if (self.get_collider().name == "Fridge"):
 				get_tree().change_scene("res://Scenes/Fridge.tscn")
 			elif (self.get_collider().name == "Sandwiches"):
