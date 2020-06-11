@@ -1,0 +1,144 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Backgrounds/kıtchen_layout_alpha_blender_flat_box.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ReturnBut.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/MakeSmoothie.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Blender_alpha_glass_transparent.png" type="Texture" id=4]
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/bread.png-04e154d6947c0edcf6bc62d232d5148c.stex"
+
+[sub_resource type="StreamTexture" id=3]
+flags = 4
+load_path = "res://.import/cheesy.png-dc2b39e2ea1b72b908a0c5883965d57b.stex"
+
+[sub_resource type="StreamTexture" id=4]
+flags = 4
+load_path = "res://.import/Ham.png-602e9714655da80e46b9a6a496992fd5.stex"
+
+[sub_resource type="StreamTexture" id=5]
+flags = 4
+load_path = "res://.import/lettuce.png-4342a3f58f596707e0c0fffec09d0a17.stex"
+
+[sub_resource type="StreamTexture" id=6]
+flags = 4
+load_path = "res://.import/onion.png-58ca5fc298b40ccb60e7f0058971b898.stex"
+
+[sub_resource type="StreamTexture" id=7]
+flags = 4
+load_path = "res://.import/tomato.png-1df3a27f3a2db4d6cec06d788c468f5b.stex"
+
+[node name="Node2D" type="Node2D"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="kitchen_layout_a_plateandbox_static" type="Sprite" parent="."]
+position = Vector2( 512, 294 )
+scale = Vector2( 0.533333, 0.537037 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ReturnBut" type="Button" parent="."]
+margin_left = 880.0
+margin_top = 16.0
+margin_right = 1003.0
+margin_bottom = 36.0
+text = "Return to Kitchen"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BlenderMaker" type="StaticBody2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="BlenderMaker"]
+position = Vector2( 508, 224 )
+scale = Vector2( 0.536443, 0.539162 )
+z_index = 2
+texture = ExtResource( 4 )
+
+[node name="Blender Buttons" type="Node" parent="."]
+
+[node name="Bread" type="Button" parent="Blender Buttons"]
+margin_left = 56.0
+margin_top = 56.0
+margin_right = 128.0
+margin_bottom = 80.0
+icon = SubResource( 2 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cheese" type="Button" parent="Blender Buttons"]
+margin_left = 160.0
+margin_top = 56.0
+margin_right = 232.0
+margin_bottom = 80.0
+icon = SubResource( 3 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ham" type="Button" parent="Blender Buttons"]
+margin_left = 56.0
+margin_top = 112.0
+margin_right = 128.0
+margin_bottom = 136.0
+icon = SubResource( 4 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lettuce" type="Button" parent="Blender Buttons"]
+margin_left = 160.0
+margin_top = 112.0
+margin_right = 232.0
+margin_bottom = 136.0
+icon = SubResource( 5 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Onion" type="Button" parent="Blender Buttons"]
+margin_left = 56.0
+margin_top = 176.0
+margin_right = 128.0
+margin_bottom = 200.0
+icon = SubResource( 6 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tomato" type="Button" parent="Blender Buttons"]
+margin_left = 160.0
+margin_top = 176.0
+margin_right = 232.0
+margin_bottom = 200.0
+icon = SubResource( 7 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="ReturnBut" to="ReturnBut" method="_on_ReturnBut_pressed"]
+[connection signal="pressed" from="Blender Buttons/Bread" to="BlenderMaker" method="_on_Bread_pressed"]
+[connection signal="pressed" from="Blender Buttons/Cheese" to="BlenderMaker" method="_on_Cheese_pressed"]
+[connection signal="pressed" from="Blender Buttons/Ham" to="BlenderMaker" method="_on_Ham_pressed"]
+[connection signal="pressed" from="Blender Buttons/Lettuce" to="BlenderMaker" method="_on_Lettuce_pressed"]
+[connection signal="pressed" from="Blender Buttons/Onion" to="BlenderMaker" method="_on_Onion_pressed"]
+[connection signal="pressed" from="Blender Buttons/Tomato" to="BlenderMaker" method="_on_Tomato_pressed"]
