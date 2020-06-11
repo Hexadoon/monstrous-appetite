@@ -7,6 +7,14 @@ extends RayCast2D
 
 
 func get_input():
+	if Input.is_action_pressed("ui_right"):
+		set_rotation_degrees(-90)
+	if Input.is_action_pressed("ui_left"):
+		set_rotation_degrees(90)
+	if Input.is_action_pressed('ui_up'):
+		set_rotation_degrees(180)
+	if Input.is_action_pressed("ui_down"):
+		set_rotation_degrees(0)
 	if (self.is_colliding()):
 		if Input.is_key_pressed(KEY_SPACE):
 			Global.pos = self.get_parent().position
@@ -14,6 +22,8 @@ func get_input():
 				get_tree().change_scene("res://Scenes/Fridge.tscn")
 			elif (self.get_collider().name == "Sandwiches"):
 				get_tree().change_scene("res://Scenes/Sandwiches.tscn")
+			elif (self.get_collider().name == "Blender"):
+				get_tree().change_scene("res://Scenes/Blender.tscn")
 
 
 
