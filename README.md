@@ -1,13 +1,7 @@
-~~THIS IS OBVIOUSLY NOT DONE BUT I"M HUNGRY AND NEED TO EAT SO I'LL SEE YOU LATER~~
-
-<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
-
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
-
 
 # Monstorous Appetite
 
-> 
+> tagline description. ((gotta find the one i sent in))
 
 > ``` godot ``` ``` 2D game ``` 
 
@@ -64,15 +58,46 @@ $ bower install
  > words words words words
 
 ### Gameplay Controls
+- **Movement Controls**
+    - words words words words
+- **Station Controls**
+    - words words words words
+- **Inventory**
+    - words words words words
 
 ### Menus & Sound
-
+- **Start Menu**
+    - words words words words
+- **End Menu**
+    - words words words words
+- **Pause**
+    - words words words words
+- **Sound**
+    - words words words words
+    - words words words words
+    
 ### The Kitchen
-
+ - **Fridge Station**
+    - words words words words
+- **Sandwich Station**
+    - words words words words
+- **Smoothie Station**
+    - words words words words
+- **Trash Station**
+    - words words words words
+    
 ### The Parents
-
+- **Hallway Light**
+    - words words words words
+- **Clean Up**
+    - words words words words
+    
 ### The Monsters & Orders
-
+ - **Notebook Features**
+    - words words words words
+- **Monster in Window**
+    - words words words words
+    
 ---
 
 ## Team
@@ -109,4 +134,4 @@ $ bower install
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
+- Copyright 2020 © 
