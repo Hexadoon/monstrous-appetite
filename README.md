@@ -7,11 +7,9 @@
 
 # Monstorous Appetite
 
-> Subtitle or Short Description Goes Here
+> 
 
-> ideally one sentence
-
-> include terms/tags that can be searched
+> ``` godot ``` ``` 2D game ``` 
 
 
 ***INSERT ANOTHER GRAPHIC HERE***
@@ -24,7 +22,6 @@
 - [Features](#features)
 - [Team](#team)
 - [FAQ](#faq)
-- [Support](#support)
 - [License](#license)
 
 ---
@@ -68,7 +65,7 @@ $ bower install
 
 ### Gameplay Controls
 
-### Menus and Sound
+### Menus & Sound
 
 ### The Kitchen
 
@@ -104,16 +101,6 @@ $ bower install
 
 - **How do I do *specifically* so and so?**
     - No problem! Just do this.
-
----
-
-## Support
-
-Reach out to me at one of the following places!
-
-- Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
-- Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
-- Insert more social links here.
 
 ---
 
