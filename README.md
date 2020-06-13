@@ -87,10 +87,10 @@ $ bower install
 | <a href="http://github.com/fvcproductions" target="_blank">`website`</a> | <a href="http://github.com/fvcproductions" target="_blank">`website`</a> |
 
 ### Graphic Artists
-| <a href="https://github.com/sophferrera" target="_blank">**Sophia Ferrera**</a> | <a href="https://github.com/JoanChirinos" target="_blank">**Mikael Yusifov**</a> |
+| <a href="https://github.com/sophferrera" target="_blank">**Sophia Ferrera**</a> | <a href="https://github.com/mikaelyusifov" target="_blank">**Mikael Yusifov**</a> |
 | :---: | :---: |
-| [![Hexadoon Studios](https://avatars0.githubusercontent.com/u/54869046?s=400&u=6de4d6946e8e10ba649b76d6d7b6e41e4367b375&v=4&s=200)](https://github.com/sophferrera)    | [![Hexadoon Studios](https://avatars0.githubusercontent.com/u/33497201?s=400&u=d2b6af5c66e92cf4373464d7ce6daa16ca9e9447&v=4&s=200)](http://fvcproductions.com) |
-| <a href="https://slf445.myportfolio.com/about-me" target="_blank">`Sophia Ferrera website`</a> | <a href="http://github.com/fvcproductions" target="_blank">`website`</a> |
+| [![Hexadoon Studios](https://avatars0.githubusercontent.com/u/54869046?s=400&u=6de4d6946e8e10ba649b76d6d7b6e41e4367b375&v=4&s=200)](https://github.com/sophferrera)    | [![Hexadoon Studios](https://avatars0.githubusercontent.com/u/66186217?s=400&v=4&s=200)](https://github.com/mikaelyusifov) |
+| <a href="https://slf445.myportfolio.com/about-me" target="_blank">`Sophia Ferrera website`</a> | <a href="https://www.artstation.com/mikael_mickey" target="_blank">`Mikael Yusifov Portfolio`</a> |
 
 ### Project Managers
 | <a href="https://github.com/E-schield" target="_blank">**Emily Schield**</a> | <a href="https://github.com/amanda350" target="_blank">**Amanda Lee**</a> |
