@@ -106,7 +106,7 @@ $ bower install
 | <a href="https://github.com/ahtibat1" target="_blank">**Tabitha Chang**</a> | <a href="https://github.com/JoanChirinos" target="_blank">**Joan Chirinos**</a> |
 | :---: | :---: |
 | [![Hexadoon Studios](https://avatars3.githubusercontent.com/u/16783371?s=400&u=71320dfbb23ff16f4f11cad8e424f8692003b601&v=4&s=200)](https://github.com/ahtibat1)    | [![Hexadoon Studios](https://avatars0.githubusercontent.com/u/33497201?s=400&u=d2b6af5c66e92cf4373464d7ce6daa16ca9e9447&v=4&s=200)](https://github.com/JoanChirinos) |
-| <a href="http://github.com/fvcproductions" target="_blank">`website`</a> | <a href="http://github.com/fvcproductions" target="_blank">`website`</a> |
+| <a href="https://github.com/ahtibat1" target="_blank">`Github`</a> | <a href="https://github.com/JoanChirinos" target="_blank">`Github`</a> |
 
 ### Graphic Artists
 | <a href="https://github.com/sophferrera" target="_blank">**Sophia Ferrera**</a> | <a href="https://github.com/mikaelyusifov" target="_blank">**Mikael Yusifov**</a> |
