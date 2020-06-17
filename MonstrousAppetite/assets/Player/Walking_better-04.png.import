@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon_right.png-89460f664bef497eafe1ab4c4ac233b6.stex"
+path="res://.import/Walking_better-04.png-8a9433975eb3c911f1b6481be1fd8f86.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon_right.png"
-dest_files=[ "res://.import/icon_right.png-89460f664bef497eafe1ab4c4ac233b6.stex" ]
+source_file="res://assets/Player/Walking_better-04.png"
+dest_files=[ "res://.import/Walking_better-04.png-8a9433975eb3c911f1b6481be1fd8f86.stex" ]
 
 [params]
 

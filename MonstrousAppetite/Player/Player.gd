@@ -18,8 +18,13 @@ func _process(delta):
 		velocity.y += 1
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
+		$AnimatedSprite.animation = "walk"
+		self.rotation = velocity.angle() + (PI / 2)
+#		$AnimatedSprite.flip_h = velocity.x < 0
+#		$AnimatedSprite.flip_v = velocity.y > 0
 		$AnimatedSprite.play()
 	else:
+		$AnimatedSprite.animation = "stand"
 		$AnimatedSprite.stop()
 	
 	# This sets position, but I believe is bad practice
@@ -30,17 +35,6 @@ func _process(delta):
 	move_and_slide(velocity)
 	
 	
-	if velocity.x != 0:
-		$AnimatedSprite.animation = "right"
-		$AnimatedSprite.flip_v = false
-		$AnimatedSprite.flip_h = velocity.x < 0
-	if velocity.y != 0:
-		$AnimatedSprite.animation = "up"
-		$AnimatedSprite.flip_v = velocity.y > 0
-	if velocity.x != 0 and velocity.y != 0:
-		$AnimatedSprite.animation = "diag"
-		$AnimatedSprite.flip_h = velocity.x < 0
-		$AnimatedSprite.flip_v = velocity.y > 0
 	
 func start(pos):
 	position = pos

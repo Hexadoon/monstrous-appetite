@@ -50,11 +50,11 @@ visible = false
 [node name="StartPos" type="Position2D" parent="."]
 position = Vector2( 300, 360 )
 
-[node name="RoundTimer" type="Timer" parent="."]
-
 [node name="OrderTimer" type="Timer" parent="."]
 wait_time = 5.0
 one_shot = true
+
+[node name="RoundTimer" type="Timer" parent="."]
 
 [node name="Island" type="StaticBody2D" parent="."]
 
@@ -107,5 +107,5 @@ rotation = -0.0786511
 shape = SubResource( 8 )
 
 [node name="HUD" parent="." instance=ExtResource( 4 )]
-[connection signal="timeout" from="RoundTimer" to="." method="_on_RoundTimer_timeout"]
 [connection signal="timeout" from="OrderTimer" to="." method="_on_OrderTimer_timeout"]
+[connection signal="timeout" from="RoundTimer" to="." method="_on_RoundTimer_timeout"]
