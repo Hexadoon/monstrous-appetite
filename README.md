@@ -8,7 +8,7 @@
 
 | <a target="_blank">**Get Ingredients**</a> | <a target="_blank">**Fill Orders**</a> | <a target="_blank">**Hide From Parents**</a> |
 | :---: |:---:| :---:|
-| <a href="https://imgur.com/tDGYtK6"><img src="https://i.imgur.com/tDGYtK6.gif" title="source: imgur.com" /></a> | <a href="https://imgur.com/vTuJx5r"><img src="https://i.imgur.com/vTuJx5r.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/WyevvNr"><img src="https://i.imgur.com/WyevvNr.png" title="source: imgur.com" /></a>  |
+| <a href="https://imgur.com/zgqKdhl"><img src="https://i.imgur.com/zgqKdhl.gif" title="source: imgur.com" /></a> | <a href="https://imgur.com/vTuJx5r"><img src="https://i.imgur.com/vTuJx5r.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/WyevvNr"><img src="https://i.imgur.com/WyevvNr.png" title="source: imgur.com" /></a>  |
 
 
 ---
@@ -106,15 +106,16 @@ $ bower install
     
 ### The Parents
 - **Hallway Light**
-    - words words words words
+    - The hallway lights will flash on before a parent comes to warn you to hide.
 - **Clean Up**
-    - words words words words
+    - The parents will walk around the room. They will clean up every station and everything set on a counter, putting everything back in the fridge. If they see the child, the night ends. The player does NOT need to sit out the parents in a hiding spot the entire time the parents are patrolling the kitchen. The player can also try to avoid the parents by being behind them or simply staying out of view. Hiding with the food can save them time as they wouldn’t have to remake it.
+
     
 ### The Monsters & Orders
  - **Notebook Features**
-    - words words words words
+    - The Notebook is where all of the orders will appear. You will know there is a new order when a new monster’s head appears at the window with a corresponding sound. Within the notebook you will see the image of the monster at the window and their desired order below it. An order will say “Sandwich” or “Smoothie” followed by the list of ingredients and how many of each.
 - **Monster in Window**
-    - words words words words
+    - The Monsters will stick their head out of the windows. You must bring their meals to them. If an order is fulfilled correctly, the monster will leave. If you give the monster an incorrect order, the monster will remain and the incorrect order will disappear.
     
 ---
 
