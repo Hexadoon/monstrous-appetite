@@ -1,12 +1,15 @@
+<a href="https://imgur.com/ZcroWcH"><img src="https://i.imgur.com/ZcroWcH.jpg" title="source: imgur.com" /></a>
 
 # Monstorous Appetite
 
-> tagline description. ((gotta find the one i sent in))
+> Monstrous Appetite is a cooking game played from the perspective of a child who is up past bedtime and must make food for the monsters lurking outside of their kitchen window without getting caught by their parents. 
 
 > ``` godot ``` ``` 2D game ``` 
 
+| <a target="_blank">**Get Ingredients**</a> | <a target="_blank">**Fill Orders**</a> | <a target="_blank">**Hide From Parents**</a> |
+| :---: |:---:| :---:|
+| <a href="https://imgur.com/cJRiBvo"><img src="https://i.imgur.com/cJRiBvo.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/vTuJx5r"><img src="https://i.imgur.com/vTuJx5r.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/WyevvNr"><img src="https://i.imgur.com/WyevvNr.png" title="source: imgur.com" /></a>  |
 
-***INSERT ANOTHER GRAPHIC HERE***
 
 ---
 
@@ -53,29 +56,50 @@ $ bower install
 ---
 
 ## Features
-***INSERT ANOTHER GRAPHIC HERE***
+<a href="https://imgur.com/XhCBl3E"><img src="https://i.imgur.com/XhCBl3E.png" title="source: imgur.com" /></a>
 
- > words words words words
+ > Taking inspiration from games like Overcooked and Papa’s ___eria, the monsters order food and the player must try to fulfill them as fast as possible before the timer ends using the different stations in the kitchen. Orders will come into the child's notebook and correlate with certain monsters. The player must reach a minimum number of orders by the end of the timer. However, the parent will randomly come downstairs to check up on the kitchen, as well as clean up any ingredients found on the counters. Therefore, the player must juggle satisfying the monsters’ orders while also hiding themself and the food from the parent.
+
 
 ### Gameplay Controls
+
 - **Movement Controls**
-    - words words words words
-- **Station Controls**
-    - words words words words
+    - Arrow Keys/WASD: Move the child around
+    - SPACEBAR: 
+      - Interact with various stations around the room: Refrigerator, Trashcan, Sandwich, and Blender station
+      - Can also be used to activate Hiding spots
+
 - **Inventory**
-    - words words words words
+    - A/D Keys: Interact with food on the kitchen floor/counter 
+      - A puts the food in left hand 
+      - D in the right hand
+    
+- **Station Controls**
+    - Mouse LEFT CLICK: 
+      - Taking ingredients out of the fridge/trash
+      - Building the sandwich/smoothie
+      - Leaving the sandwich/smoothie stations
+      - Taking complete sandwich.smoothie out of the station
+      - Opening notebook
+    
+    - Shift Key:
+       - Load ingredients into sandwich/smoothie stations
+
 
 ### Menus & Sound
 - **Start Menu**
-    - words words words words
+    - LEFT CLICK on button to begin game 
 - **End Menu**
-    - words words words words
+    - LEFT CLICK on button to restart game
 - **Pause**
-    - words words words words
+    - ESCAPE Key: Pause/Resume game (not available on start and game over screens)
 - **Sound**
-    - words words words words
-    - words words words words
+    - ASDF: To mute sound
+    - ASDF: To Adjust sound settings
     
+| <a target="_blank">**Sandwich Station**</a> | <a target="_blank">**Smoothie Station**</a> | <a target="_blank">**Trash Station**</a> |
+| :---: |:---:| :---:|
+| <a href="https://imgur.com/ukqBHhL"><img src="https://i.imgur.com/ukqBHhL.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/Ge6wCHk"><img src="https://i.imgur.com/Ge6wCHk.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/ltUxMia"><img src="https://i.imgur.com/ltUxMia.png" title="source: imgur.com" /></a>  |
 ### The Kitchen
  - **Fridge Station**
     - words words words words
