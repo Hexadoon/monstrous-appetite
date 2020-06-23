@@ -8,7 +8,7 @@
 
 | <a target="_blank">**Get Ingredients**</a> | <a target="_blank">**Fill Orders**</a> | <a target="_blank">**Hide From Parents**</a> |
 | :---: |:---:| :---:|
-| <a href="https://imgur.com/cJRiBvo"><img src="https://i.imgur.com/cJRiBvo.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/vTuJx5r"><img src="https://i.imgur.com/vTuJx5r.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/WyevvNr"><img src="https://i.imgur.com/WyevvNr.png" title="source: imgur.com" /></a>  |
+| <a href="https://imgur.com/tDGYtK6"><img src="https://i.imgur.com/tDGYtK6.gif" title="source: imgur.com" /></a> | <a href="https://imgur.com/vTuJx5r"><img src="https://i.imgur.com/vTuJx5r.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/WyevvNr"><img src="https://i.imgur.com/WyevvNr.png" title="source: imgur.com" /></a>  |
 
 
 ---
@@ -101,7 +101,7 @@ $ bower install
     
 | <a target="_blank">**Fridge Station**</a> | <a target="_blank">**Sandwich/Smoothie Station**</a> | <a target="_blank">**Trash Station**</a> |
 | :---: |:---:| :---:|
-| <a href="https://imgur.com/cJRiBvo"><img src="https://i.imgur.com/cJRiBvo.png" title="source: imgur.com" /></a>  | <a href="https://imgur.com/Ge6wCHk"><img src="https://i.imgur.com/Ge6wCHk.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/ltUxMia"><img src="https://i.imgur.com/ltUxMia.png" title="source: imgur.com" /></a>  |
+|<a href="https://imgur.com/W1OVK4t"><img src="https://i.imgur.com/W1OVK4t.gif" title="source: imgur.com" /></a>  | <a href="https://imgur.com/Lez2Pny"><img src="https://i.imgur.com/Lez2Pny.gif" title="source: imgur.com" /></a> | <a href="https://imgur.com/ltUxMia"><img src="https://i.imgur.com/ltUxMia.png" title="source: imgur.com" /></a>  |
 | <a target="_blank"> At the Fridge Station the player is able to get an unlimited amount of ingredients. They can carry them two at a time with one item per hand. From there ingredients must be placed in the correct work stations. </a> | <a  target="_blank"> Ingredients must be loaded into the sandwich or smoothie station in order to be used. To build an order, click on the corresponding ingredient to the side. Ingredients and unfinished sandwiches left in the station will be put back in the fridge if the parent walks over to it. </a> | <a  target="_blank"> The trashcan is a source of ingredients similar to the fridge, except more specialized for monster ingredients. </a> |
     
 ### The Parents
