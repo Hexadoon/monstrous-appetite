@@ -99,7 +99,7 @@ $ bower install
     - ASDF: To mute sound
     - ASDF: To Adjust sound settings
     
-| <a target="_blank">**Fridge Station**</a> | <a target="_blank">** Sandwich/Smoothie Station**</a> | <a target="_blank">**Trash Station**</a> |
+| <a target="_blank">**Fridge Station**</a> | <a target="_blank">**Sandwich/Smoothie Station**</a> | <a target="_blank">**Trash Station**</a> |
 | :---: |:---:| :---:|
 | <a href="https://imgur.com/cJRiBvo"><img src="https://i.imgur.com/cJRiBvo.png" title="source: imgur.com" /></a>  | <a href="https://imgur.com/Ge6wCHk"><img src="https://i.imgur.com/Ge6wCHk.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/ltUxMia"><img src="https://i.imgur.com/ltUxMia.png" title="source: imgur.com" /></a>  |
 | <a target="_blank"> At the Fridge Station the player is able to get an unlimited amount of ingredients. They can carry them two at a time with one item per hand. From there ingredients must be placed in the correct work stations. </a> | <a  target="_blank"> Ingredients must be loaded into the sandwich or smoothie station in order to be used. To build an order, click on the corresponding ingredient to the side. Ingredients and unfinished sandwiches left in the station will be put back in the fridge if the parent walks over to it. </a> | <a  target="_blank"> The trashcan is a source of ingredients similar to the fridge, except more specialized for monster ingredients. </a> |
