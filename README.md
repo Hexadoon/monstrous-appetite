@@ -68,6 +68,8 @@ $ bower install
     - SPACEBAR: 
       - Interact with various stations around the room: Refrigerator, Trashcan, Sandwich, and Blender station
       - Can also be used to activate Hiding spots
+    - ASDF:
+      - Key to interact with monsters
 
 - **Inventory**
     - A/D Keys: Interact with food on the kitchen floor/counter 
@@ -97,18 +99,10 @@ $ bower install
     - ASDF: To mute sound
     - ASDF: To Adjust sound settings
     
-| <a target="_blank">**Sandwich Station**</a> | <a target="_blank">**Smoothie Station**</a> | <a target="_blank">**Trash Station**</a> |
+| <a target="_blank">**Fridge Station**</a> | <a target="_blank">** Sandwich/Smoothie Station**</a> | <a target="_blank">**Trash Station**</a> |
 | :---: |:---:| :---:|
-| <a href="https://imgur.com/ukqBHhL"><img src="https://i.imgur.com/ukqBHhL.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/Ge6wCHk"><img src="https://i.imgur.com/Ge6wCHk.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/ltUxMia"><img src="https://i.imgur.com/ltUxMia.png" title="source: imgur.com" /></a>  |
-### The Kitchen
- - **Fridge Station**
-    - words words words words
-- **Sandwich Station**
-    - words words words words
-- **Smoothie Station**
-    - words words words words
-- **Trash Station**
-    - words words words words
+| <a href="https://imgur.com/cJRiBvo"><img src="https://i.imgur.com/cJRiBvo.png" title="source: imgur.com" /></a>  | <a href="https://imgur.com/Ge6wCHk"><img src="https://i.imgur.com/Ge6wCHk.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/ltUxMia"><img src="https://i.imgur.com/ltUxMia.png" title="source: imgur.com" /></a>  |
+| <a target="_blank"> At the Fridge Station the player is able to get an unlimited amount of ingredients. They can carry them two at a time with one item per hand. From there ingredients must be placed in the correct work stations. </a> | <a  target="_blank"> Ingredients must be loaded into the sandwich or smoothie station in order to be used. To build an order, click on the corresponding ingredient to the side. Ingredients and unfinished sandwiches left in the station will be put back in the fridge if the parent walks over to it. </a> | <a  target="_blank"> The trashcan is a source of ingredients similar to the fridge, except more specialized for monster ingredients. </a> |
     
 ### The Parents
 - **Hallway Light**
