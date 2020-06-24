@@ -1,6 +1,6 @@
 <a href="https://imgur.com/ZcroWcH"><img src="https://i.imgur.com/ZcroWcH.jpg" title="source: imgur.com" /></a>
 
-# Monstorous Appetite
+# Monstrous Appetite
 
 > Monstrous Appetite is a cooking game played from the perspective of a child who is up past bedtime and must make food for the monsters lurking outside of their kitchen window without getting caught by their parents. 
 
