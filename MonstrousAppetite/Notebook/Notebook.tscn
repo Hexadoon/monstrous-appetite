@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/Notebook/notebook.png" type="Texture" id=1]
+[ext_resource path="res://Notebook/Notebook.gd" type="Script" id=2]
+[ext_resource path="res://Order/Order.tscn" type="PackedScene" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://assets/Fonts/Schoolbell/Schoolbell-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 100
+font_data = SubResource( 1 )
+
+[node name="Notebook" type="Node2D"]
+script = ExtResource( 2 )
+Order = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -483.254
+margin_top = -491.0
+margin_right = 480.746
+margin_bottom = 491.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -159.0
+margin_top = 15.0
+margin_right = -15.0
+margin_bottom = 159.0
+custom_fonts/font = SubResource( 2 )
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextOrder" type="Position2D" parent="."]
+position = Vector2( 750, 150 )
+[connection signal="pressed" from="ColorRect/Button" to="." method="_on_Button_pressed"]
