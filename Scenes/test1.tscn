@@ -91,8 +91,14 @@ shape = SubResource( 1 )
 [node name="RayCast2D" type="RayCast2D" parent="RunParents/Parents"]
 scale = Vector2( 20, 4 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="RunParents/Parents"]
+[node name="Caught" type="AudioStreamPlayer2D" parent="RunParents/Parents"]
 stream = ExtResource( 14 )
+
+[node name="ShortClean" type="AudioStreamPlayer2D" parent="RunParents/Parents"]
+stream = ExtResource( 16 )
+
+[node name="LongClean" type="AudioStreamPlayer2D" parent="RunParents/Parents"]
+stream = ExtResource( 15 )
 
 [node name="Walker" type="KinematicBody2D" parent="."]
 position = Vector2( 928, 320 )
