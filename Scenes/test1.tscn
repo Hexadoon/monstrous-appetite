@@ -1,20 +1,101 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Scripts/Walker.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/WalkerRay.gd" type="Script" id=2]
-[ext_resource path="res://Backgrounds/kitchen_layout_alpha.jpg" type="Texture" id=3]
+[ext_resource path="res://Assets/Apple.png" type="Texture" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://Backgrounds/Kitchen_v01_Front_Counter.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Kitchen_v01_Hallway_Light.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/MoveIngredients.gd" type="Script" id=7]
+[ext_resource path="res://Backgrounds/Kitchen_v01_Blender_v1.png" type="Texture" id=8]
+[ext_resource path="res://Backgrounds/Kitchen_v01_Bin_v1.png" type="Texture" id=9]
+[ext_resource path="res://Backgrounds/Kitchen_v01_SandwichPlates_v01.png" type="Texture" id=10]
+[ext_resource path="res://Backgrounds/Kitchen_v01_Background.png" type="Texture" id=11]
+[ext_resource path="res://Scripts/RunParents.gd" type="Script" id=12]
+[ext_resource path="res://Scripts/ParentWalking.gd" type="Script" id=13]
+[ext_resource path="res://Assets/gotobed.wav" type="AudioStream" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32, 32 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 32, 32 )
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 16, 6 )
+
+[sub_resource type="StreamTexture" id=4]
+flags = 4
+load_path = "res://.import/bread.png-04e154d6947c0edcf6bc62d232d5148c.stex"
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 32, 32 )
+
+[sub_resource type="GDScript" id=6]
+script/source = "extends Node
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+#	var scene = load(\"res://temp.tscn\")
+#	var ingredients = scene.instance()
+#	add_child(ingredients)
+	pass
+
+func setIngredientpos():
+	pass
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 48, 24 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 48, 24 )
+
 [node name="Node2D" type="Node2D"]
 
+[node name="RunParents" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Hall Light" type="Sprite" parent="RunParents"]
+visible = false
+position = Vector2( 214, 270.813 )
+scale = Vector2( 0.606557, 0.892402 )
+texture = ExtResource( 6 )
+
+[node name="Parents" type="KinematicBody2D" parent="RunParents"]
+position = Vector2( 208, -48 )
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="RunParents/Parents"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RunParents/Parents"]
+scale = Vector2( 4, 4 )
+shape = SubResource( 1 )
+
+[node name="RayCast2D" type="RayCast2D" parent="RunParents/Parents"]
+scale = Vector2( 20, 4 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="RunParents/Parents"]
+stream = ExtResource( 14 )
+
 [node name="Walker" type="KinematicBody2D" parent="."]
-position = Vector2( 160, 96 )
+position = Vector2( 928, 320 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -24,7 +105,7 @@ __meta__ = {
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walker"]
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="rayman" type="RayCast2D" parent="Walker"]
 collision_mask = 2049
@@ -36,8 +117,40 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 offset = Vector2( 0, 80 )
 
+[node name="CarriedIngredient" type="Area2D" parent="Walker"]
+script = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walker/CarriedIngredient"]
+visible = false
+position = Vector2( -10, 30 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Walker/CarriedIngredient"]
+visible = false
+position = Vector2( -10, 30 )
+scale = Vector2( 0.1, 0.1 )
+texture = SubResource( 4 )
+
+[node name="Left" type="Node2D" parent="Walker/CarriedIngredient"]
+position = Vector2( -10, 30 )
+
+[node name="Sprite2" type="Sprite" parent="Walker/CarriedIngredient"]
+visible = false
+position = Vector2( 10, 30 )
+scale = Vector2( 0.1, 0.1 )
+texture = SubResource( 4 )
+
+[node name="Right" type="Node2D" parent="Walker/CarriedIngredient"]
+position = Vector2( 10, 30 )
+z_index = 1
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walker/CarriedIngredient"]
+visible = false
+position = Vector2( 10, 30 )
+shape = SubResource( 3 )
+
 [node name="Fridge" type="KinematicBody2D" parent="."]
-position = Vector2( 312, 192 )
+position = Vector2( 360, 240 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -47,20 +160,88 @@ modulate = Color( 0.556863, 0.0156863, 0.0156863, 1 )
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fridge"]
-shape = SubResource( 2 )
+shape = SubResource( 5 )
+
+[node name="Trash" type="KinematicBody2D" parent="."]
+position = Vector2( 808, 448 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trash"]
+position = Vector2( -4.00004, -4 )
+scale = Vector2( 0.75, 0.4 )
+texture = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash"]
+shape = SubResource( 5 )
 
 [node name="Sandwiches" type="KinematicBody2D" parent="."]
-position = Vector2( 512, 152 )
+position = Vector2( 728, 184 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="Sandwiches"]
-modulate = Color( 0.964706, 0.34902, 0.956863, 1 )
-texture = ExtResource( 4 )
+position = Vector2( 0, -10.7692 )
+scale = Vector2( 0.598131, 0.491601 )
+texture = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sandwiches"]
-shape = SubResource( 2 )
+shape = SubResource( 5 )
+
+[node name="Blender" type="KinematicBody2D" parent="."]
+position = Vector2( 600, 176 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Blender"]
+position = Vector2( -1.62125e-05, -3.8147e-06 )
+scale = Vector2( 0.771084, 0.633663 )
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Blender"]
+shape = SubResource( 5 )
+
+[node name="Counter" type="Sprite" parent="."]
+position = Vector2( 536, 420 )
+scale = Vector2( 0.539932, 0.559671 )
+texture = ExtResource( 5 )
+
+[node name="Ingredients" type="Node2D" parent="."]
+script = SubResource( 6 )
+
+[node name="HidingSpots" type="Node2D" parent="."]
+
+[node name="Cabinet" type="StaticBody2D" parent="HidingSpots"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HidingSpots/Cabinet"]
+position = Vector2( 512, 464 )
+shape = SubResource( 8 )
+
+[node name="Cabinet2" type="StaticBody2D" parent="HidingSpots"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HidingSpots/Cabinet2"]
+position = Vector2( 720, 464 )
+shape = SubResource( 8 )
+
+[node name="Oven" type="StaticBody2D" parent="HidingSpots"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HidingSpots/Oven"]
+position = Vector2( 824, 224 )
+shape = SubResource( 8 )
+
+[node name="greenspot" type="StaticBody2D" parent="HidingSpots"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HidingSpots/greenspot"]
+position = Vector2( 56, 544 )
+shape = SubResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="HidingSpots/greenspot"]
+modulate = Color( 0.0901961, 0.741176, 0.298039, 1 )
+position = Vector2( 56, 544 )
+texture = ExtResource( 4 )
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1000
@@ -74,4 +255,15 @@ __meta__ = {
 [node name="kitchen_layout_alpha" type="Sprite" parent="TileMap"]
 position = Vector2( 512, 298 )
 scale = Vector2( 0.533333, 0.544444 )
-texture = ExtResource( 3 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap"]
+modulate = Color( 0.180392, 0.905882, 0.54902, 1 )
+position = Vector2( 512, 456 )
+shape = SubResource( 7 )
+
+[node name="Overlay" type="CanvasLayer" parent="."]
+layer = 3
