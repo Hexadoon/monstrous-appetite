@@ -11,7 +11,7 @@ var cleaning = false
 var numitems = 0
 var checkedBlender = false
 var checkedSandwiches = false
-var checkedFridge = false
+var checkedFridge = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -75,6 +75,7 @@ func _physics_process(delta):
 			var name =self.get_node("RayCast2D").get_collider().name
 			if(name == "Singular" or name == "Sandwich" or name == "Smoothie"):
 				if(self.get_node("RayCast2D").get_collider().get_parent().get_parent().name=="Ingredients"):
+					self.get_node("ShortClean").play()
 					self.get_node("RayCast2D").get_collider().get_parent().queue_free()
 					numitems+=1
 					velocity = Vector2(0,0)
@@ -91,6 +92,7 @@ func _physics_process(delta):
 			if(name == "Sandwiches" and not checkedSandwiches):
 				checkedSandwiches = true
 				checkedFridge=false
+				self.get_node("LongClean").play()
 				Global.clear("Sandwich")
 				Global.SandwichLoaded=[0,0,0,0,0,0,0,0,0,0,0]
 				velocity = Vector2(0,0)
@@ -106,6 +108,7 @@ func _physics_process(delta):
 			if(name=="Blender" and not checkedBlender):
 				checkedBlender=true
 				checkedFridge=false
+				self.get_node("LongClean").play()
 				Global.clear("Smoothie")
 				velocity = Vector2(0,0)
 				Global.SmoothieLoaded=[0,0,0,0,0,0,0,0,0,0,0]
@@ -132,7 +135,7 @@ func _physics_process(delta):
 				t.queue_free()
 				numitems=0
 			if(name == "Walker" and Global.isHiding == false):
-				self.get_node("AudioStreamPlayer2D").play()
+				self.get_node("Caught").play()
 				print("CAUGHT") #GAMEOVER
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
