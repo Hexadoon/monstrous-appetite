@@ -142,7 +142,7 @@ func buildSmoothie(ing, rot, pos, shap):
 		addon.global_translate(Vector2(0,-40)) 
 	#above ifelse statement needed to make the ingredient land in front of player
 	addon.add_child(shape)
-	addonSprite.set_scale(Vector2(0.01, 0.01))
+	addonSprite.set_scale(Vector2(0.05, 0.05))
 	addon.add_child(addonSprite)
 	addon.set_name("Smoothie")
 	
