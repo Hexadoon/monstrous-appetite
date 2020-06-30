@@ -66,9 +66,8 @@ $ bower install
     - Arrow Keys/WASD: Move the child around
     - SPACEBAR: 
       - Interact with various stations around the room: Refrigerator, Trashcan, Sandwich, and Blender station
+      - Interact with monsters
       - Can also be used to activate Hiding spots
-    - ASDF:
-      - Key to interact with monsters
 
 - **Inventory**
     - A/D Keys: Interact with food on the kitchen floor/counter 
