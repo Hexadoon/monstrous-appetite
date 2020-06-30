@@ -18,7 +18,6 @@
 - [Installation](#installation)
 - [Features](#features)
 - [Team](#team)
-- [FAQ](#faq)
 - [License](#license)
 
 ---
@@ -87,17 +86,13 @@ $ bower install
     - Shift Key:
        - Load ingredients into sandwich/smoothie stations
 
-
-### Menus & Sound
+### Menus
 - **Start Menu**
     - LEFT CLICK on button to begin game 
 - **End Menu**
     - LEFT CLICK on button to restart game
 - **Pause**
     - ESCAPE Key: Pause/Resume game (not available on start and game over screens)
-- **Sound**
-    - ASDF: To mute sound
-    - ASDF: To Adjust sound settings
     
 | <a target="_blank">**Fridge Station**</a> | <a target="_blank">**Sandwich/Smoothie Station**</a> | <a target="_blank">**Trash Station**</a> |
 | :---: |:---:| :---:|
@@ -138,13 +133,6 @@ $ bower install
 | :---: | :---: |
 | [![Hexadoon Studios](https://avatars2.githubusercontent.com/u/65874973?s=460&u=6d99e91202e6e96bc809a8d0813406872046e60c&v=4&s=200)](https://github.com/E-schield)    | [![Hexadoon Studios](https://avatars1.githubusercontent.com/u/66491442?s=400&v=4&s=200)](https://github.com/amanda350) |
 | <a href="https://www.linkedin.com/in/emily-schield-473046150/" target="_blank">`Linkedin`</a> | <a href="https://www.linkedin.com/in/alee000/" target="_blank">`Linkedin`</a> |
-
----
-
-## FAQ
-
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
 
 ---
 
