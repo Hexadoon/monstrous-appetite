@@ -16,12 +16,17 @@ _global_script_class_icons={
 [application]
 
 config/name="Monstrous Appetite"
-run/main_scene="res://Main/Main.tscn"
+run/main_scene="res://Scenes/Main.tscn"
+
+[autoload]
+
+Global="*res://Scripts/Global.gd"
+IngredientVars="*res://Scripts/IngredientVars.gd"
 
 [display]
 
-window/size/width=1920
-window/size/height=1080
+window/size/width=1023
+window/size/height=587
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 

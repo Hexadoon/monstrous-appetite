@@ -1,0 +1,405 @@
+[gd_scene load_steps=62 format=2]
+
+[ext_resource path="res://Scripts/Walker.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/WalkerRay.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Mama/mama_animation_Down/mama_animation_down_idle.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Kid/Kid_Down/kid_animation_down_idle_Rextend.png" type="Texture" id=4]
+[ext_resource path="res://Backgrounds/Kitchen_v01_Front_Counter.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Kitchen_v01_Hallway_Light.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/MoveIngredients.gd" type="Script" id=7]
+[ext_resource path="res://Backgrounds/Kitchen_v01_Blender_v1.png" type="Texture" id=8]
+[ext_resource path="res://Backgrounds/Kitchen_v01_Bin_v1.png" type="Texture" id=9]
+[ext_resource path="res://Backgrounds/Kitchen_v01_SandwichPlates_v01.png" type="Texture" id=10]
+[ext_resource path="res://Backgrounds/Kitchen_v01_Background.png" type="Texture" id=11]
+[ext_resource path="res://Scripts/RunParents.gd" type="Script" id=12]
+[ext_resource path="res://Scripts/ParentWalking.gd" type="Script" id=13]
+[ext_resource path="res://Assets/Kid/Kid_Down/kid_animation_down_walk2.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Kid/Kid_Side/kid_animation_side_idle_walk3.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Kid/Kid_Down/kid_animation_down_idle.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Kid/Kid_Down/kid_animation_down_walk6.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Kid/Kid_Down/kid_animation_down_walk8.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Kid/Kid_Up/kid_animation_up_walk2.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Kid/Kid_Down/kid_animation_down_walk3.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Kid/Kid_Down/kid_animation_down_walk1.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Kid/Kid_Side/kid_animation_side_idle_walk6.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Kid/Kid_Side/kid_animation_side_idle.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Kid/Kid_Down/kid_animation_down_walk7.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Kid/Kid_Side/kid_animation_side_idle_walk8.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Kid/Kid_Side/kid_animation_side_idle_walk2.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Kid/Kid_Side/kid_animation_side_idle_walk7.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Kid/Kid_Up/kid_animation_up_idle.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Kid/Kid_Side/kid_animation_side_idle_walk5.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Kid/Kid_Down/kid_animation_down_walk5.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Kid/Kid_Down/kid_animation_down_walk4.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Kid/Kid_Up/kid_animation_up_walk1.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Kid/Kid_Up/kid_animation_up_walk4.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Kid/Kid_Up/kid_animation_up_walk6.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Kid/Kid_Up/kid_animation_up_walk5.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Kid/Kid_Side/kid_animation_side_idle_walk1.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Kid/Kid_Up/kid_animation_up_walk7.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Kid/Kid_Up/kid_animation_up_walk8.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Kid/Kid_Up/kid_animation_up_walk3.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Kid/Kid_Side/kid_animation_side_idle_walk4.png" type="Texture" id=40]
+[ext_resource path="res://Assets/icon.png" type="Texture" id=41]
+[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=42]
+[ext_resource path="res://Scenes/test1.gd" type="Script" id=43]
+[ext_resource path="res://Scenes/Notebook.tscn" type="PackedScene" id=44]
+[ext_resource path="res://Assets/Notebook/NotebookSheet.png" type="Texture" id=45]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 69.4003, 21.0191 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 29.9761, 39.3134 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 34.3206, 99.4016 )
+
+[sub_resource type="GDScript" id=6]
+script/source = "extends Node
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+#	var scene = load(\"res://temp.tscn\")
+#	var ingredients = scene.instance()
+#	add_child(ingredients)
+	pass
+
+func setIngredientpos():
+	pass
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 48, 24 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 48, 24 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 238.181, 65.9216 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 168.022, 21.7625 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 21.5123, 300.087 )
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 542.206, 10 )
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 28 ) ],
+"loop": true,
+"name": "stand_up",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 19 ), ExtResource( 39 ), ExtResource( 33 ), ExtResource( 35 ), ExtResource( 34 ), ExtResource( 37 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "walk_up",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": true,
+"name": "stand_side",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 16 ) ],
+"loop": true,
+"name": "stand_down",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 14 ), ExtResource( 20 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 17 ), ExtResource( 24 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "walk_down",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 26 ), ExtResource( 15 ), ExtResource( 40 ), ExtResource( 29 ), ExtResource( 22 ), ExtResource( 27 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "walk_side",
+"speed": 15.0
+} ]
+
+[sub_resource type="CircleShape2D" id=11]
+radius = 26.5002
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 16, 6 )
+
+[sub_resource type="StreamTexture" id=4]
+flags = 4
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 43 )
+
+[node name="RunParents" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Hall Light" type="Sprite" parent="RunParents"]
+visible = false
+position = Vector2( 214, 270.813 )
+scale = Vector2( 0.606557, 0.892402 )
+texture = ExtResource( 6 )
+
+[node name="Parents" type="KinematicBody2D" parent="RunParents"]
+position = Vector2( 208, -48 )
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="RunParents/Parents"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RunParents/Parents"]
+scale = Vector2( 4, 4 )
+shape = SubResource( 1 )
+
+[node name="RayCast2D" type="RayCast2D" parent="RunParents/Parents"]
+scale = Vector2( 20, 4 )
+
+[node name="Fridge" type="KinematicBody2D" parent="."]
+position = Vector2( 360, 240 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Fridge"]
+modulate = Color( 0.556863, 0.0156863, 0.0156863, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fridge"]
+position = Vector2( 8.25403, 26.8257 )
+shape = SubResource( 12 )
+
+[node name="Trash" type="KinematicBody2D" parent="."]
+position = Vector2( 808, 448 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trash"]
+position = Vector2( -4.00004, -4 )
+scale = Vector2( 0.75, 0.4 )
+texture = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash"]
+position = Vector2( -8.25409, -3.43918 )
+shape = SubResource( 17 )
+
+[node name="Sandwiches" type="KinematicBody2D" parent="."]
+position = Vector2( 728, 184 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Sandwiches"]
+position = Vector2( 0, -10.7692 )
+scale = Vector2( 0.598131, 0.491601 )
+texture = ExtResource( 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sandwiches"]
+position = Vector2( 0, -6.19054 )
+shape = SubResource( 5 )
+
+[node name="Blender" type="KinematicBody2D" parent="."]
+position = Vector2( 600, 176 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Blender"]
+position = Vector2( -1.62125e-05, -3.8147e-06 )
+scale = Vector2( 0.771084, 0.633663 )
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Blender"]
+position = Vector2( 0, -0.687866 )
+shape = SubResource( 5 )
+
+[node name="Counter" type="Sprite" parent="."]
+position = Vector2( 536, 420 )
+scale = Vector2( 0.539932, 0.559671 )
+texture = ExtResource( 5 )
+
+[node name="Ingredients" type="Node2D" parent="."]
+script = SubResource( 6 )
+
+[node name="HidingSpots" type="Node2D" parent="."]
+
+[node name="Cabinet" type="StaticBody2D" parent="HidingSpots"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HidingSpots/Cabinet"]
+position = Vector2( 512, 464 )
+shape = SubResource( 7 )
+
+[node name="Cabinet2" type="StaticBody2D" parent="HidingSpots"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HidingSpots/Cabinet2"]
+position = Vector2( 720, 464 )
+shape = SubResource( 7 )
+
+[node name="Oven" type="StaticBody2D" parent="HidingSpots"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HidingSpots/Oven"]
+position = Vector2( 824, 224 )
+shape = SubResource( 7 )
+
+[node name="greenspot" type="StaticBody2D" parent="HidingSpots"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HidingSpots/greenspot"]
+position = Vector2( 56, 544 )
+shape = SubResource( 8 )
+
+[node name="Sprite" type="Sprite" parent="HidingSpots/greenspot"]
+modulate = Color( 0.0901961, 0.741176, 0.298039, 1 )
+position = Vector2( 56, 544 )
+texture = ExtResource( 41 )
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = -1000
+z_as_relative = false
+format = 1
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="kitchen_layout_alpha" type="Sprite" parent="TileMap"]
+position = Vector2( 512, 298 )
+scale = Vector2( 0.533333, 0.544444 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap"]
+modulate = Color( 0.180392, 0.905882, 0.54902, 1 )
+position = Vector2( 512, 456 )
+shape = SubResource( 9 )
+
+[node name="Overlay" type="CanvasLayer" parent="."]
+layer = 3
+
+[node name="Island" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Island"]
+position = Vector2( 533.075, 416.142 )
+shape = SubResource( 13 )
+
+[node name="Back" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Back"]
+position = Vector2( 604.61, 248.997 )
+shape = SubResource( 14 )
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls"]
+position = Vector2( -22.6986, 293.707 )
+shape = SubResource( 15 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls"]
+position = Vector2( 1044.83, 297.834 )
+shape = SubResource( 15 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Walls"]
+position = Vector2( 518.63, 180.901 )
+shape = SubResource( 16 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Walls"]
+position = Vector2( 520.693, 604.61 )
+shape = SubResource( 16 )
+
+[node name="Walker" type="KinematicBody2D" parent="."]
+position = Vector2( 928, 320 )
+scale = Vector2( 0.6, 0.6 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Walker"]
+frames = SubResource( 10 )
+animation = "stand_side"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walker"]
+position = Vector2( -9.38379, 81.8795 )
+shape = SubResource( 11 )
+
+[node name="rayman" type="RayCast2D" parent="Walker"]
+collision_mask = 2049
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Walker/rayman"]
+modulate = Color( 0, 0, 0, 1 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+offset = Vector2( 0, 80 )
+
+[node name="CarriedIngredient" type="Area2D" parent="Walker"]
+script = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walker/CarriedIngredient"]
+visible = false
+position = Vector2( -10, 30 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Walker/CarriedIngredient"]
+visible = false
+position = Vector2( -10, 30 )
+scale = Vector2( 0.1, 0.1 )
+texture = SubResource( 4 )
+
+[node name="Left" type="Node2D" parent="Walker/CarriedIngredient"]
+position = Vector2( -10, 30 )
+
+[node name="Sprite2" type="Sprite" parent="Walker/CarriedIngredient"]
+visible = false
+position = Vector2( 10, 30 )
+scale = Vector2( 0.1, 0.1 )
+texture = SubResource( 4 )
+
+[node name="Right" type="Node2D" parent="Walker/CarriedIngredient"]
+position = Vector2( 10, 30 )
+z_index = 1
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walker/CarriedIngredient"]
+visible = false
+position = Vector2( 10, 30 )
+shape = SubResource( 3 )
+
+[node name="HUD" parent="." instance=ExtResource( 42 )]
+position = Vector2( 0, -0.687836 )
+
+[node name="Notebook" parent="." instance=ExtResource( 44 )]
+visible = false
+
+[node name="OrderTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="RoundTimer" type="Timer" parent="."]
+
+[node name="NotebookLight" type="Light2D" parent="."]
+position = Vector2( 41.2703, 50.2122 )
+scale = Vector2( 0.0617079, 0.0588411 )
+texture = ExtResource( 45 )
+color = Color( 0.784314, 1, 0, 1 )
+energy = 0.0
+[connection signal="timeout" from="OrderTimer" to="." method="_on_OrderTimer_timeout"]
+[connection signal="timeout" from="RoundTimer" to="." method="_on_RoundTimer_timeout"]

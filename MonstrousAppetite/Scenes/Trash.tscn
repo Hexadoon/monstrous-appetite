@@ -1,0 +1,125 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/ReturnTrash.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Food/Bottle.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Food/Banana.png" type="Texture" id=3]
+[ext_resource path="res://Backgrounds/Kitchen_v01_Trash_closeup_01.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/FridgeText.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Food/Pizza.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Food/Fish.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Food/IceCream.png" type="Texture" id=8]
+
+[node name="Node2D" type="Node2D"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fridge_Closeup_alpha" type="Sprite" parent="."]
+position = Vector2( 516, 300 )
+scale = Vector2( 0.5375, 0.555556 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ReturnTrash" type="Button" parent="."]
+margin_left = 888.0
+margin_top = 16.0
+margin_right = 999.0
+margin_bottom = 36.0
+text = "Back to Kitchen"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Clear" type="Button" parent="."]
+margin_left = 208.0
+margin_top = 40.0
+margin_right = 323.0
+margin_bottom = 60.0
+text = "Clear Selection"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ingredients" type="Node" parent="."]
+
+[node name="IceCream" type="Button" parent="Ingredients"]
+margin_left = 272.0
+margin_top = 376.0
+margin_right = 559.0
+margin_bottom = 488.0
+rect_scale = Vector2( 0.5, 0.5 )
+icon = ExtResource( 8 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Banana" type="Button" parent="Ingredients"]
+margin_left = 400.0
+margin_top = 296.0
+margin_right = 687.0
+margin_bottom = 405.0
+rect_scale = Vector2( 0.5, 0.5 )
+icon = ExtResource( 3 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fish" type="Button" parent="Ingredients"]
+margin_left = 688.0
+margin_top = 344.0
+margin_right = 975.0
+margin_bottom = 488.0
+rect_scale = Vector2( 0.5, 0.5 )
+icon = ExtResource( 7 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pizza" type="Button" parent="Ingredients"]
+margin_left = 600.0
+margin_top = 248.0
+margin_right = 887.0
+margin_bottom = 360.0
+rect_scale = Vector2( 0.5, 0.5 )
+icon = ExtResource( 6 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bottle" type="Button" parent="Ingredients"]
+margin_left = 480.0
+margin_top = 392.0
+margin_right = 767.0
+margin_bottom = 476.0
+rect_scale = Vector2( 0.5, 0.5 )
+icon = ExtResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FridgeText" type="RichTextLabel" parent="."]
+margin_left = 216.0
+margin_top = 8.0
+margin_right = 824.0
+margin_bottom = 40.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Take out:"
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="ReturnTrash" to="ReturnTrash" method="_on_ReturnBut_pressed"]
+[connection signal="pressed" from="Clear" to="ReturnTrash" method="_on_Clear_pressed"]
+[connection signal="pressed" from="Ingredients/IceCream" to="ReturnTrash" method="_on_IceCream_pressed"]
+[connection signal="pressed" from="Ingredients/Banana" to="ReturnTrash" method="_on_Banana_pressed"]
+[connection signal="pressed" from="Ingredients/Fish" to="ReturnTrash" method="_on_Fish_pressed"]
+[connection signal="pressed" from="Ingredients/Pizza" to="ReturnTrash" method="_on_Pizza_pressed"]
+[connection signal="pressed" from="Ingredients/Bottle" to="ReturnTrash" method="_on_Bottle_pressed"]

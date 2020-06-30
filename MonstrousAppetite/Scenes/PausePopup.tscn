@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/PausePopup.gd" type="Script" id=1]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://assets/Fonts/Schoolbell/Schoolbell-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 200
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://assets/Fonts/Schoolbell/Schoolbell-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 75
+font_data = SubResource( 3 )
+
+[node name="PausePopup" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0, 0, 0, 0.313726 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseLabel" type="Label" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -290.0
+margin_top = -300.0
+margin_right = 290.0
+margin_bottom = -210.0
+custom_fonts/font = SubResource( 2 )
+text = "PAUSED"
+
+[node name="ResumeLabel" type="Label" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -224.5
+margin_top = -52.0
+margin_right = 224.5
+margin_bottom = 52.0
+custom_fonts/font = SubResource( 4 )
+text = "ESC to resume"

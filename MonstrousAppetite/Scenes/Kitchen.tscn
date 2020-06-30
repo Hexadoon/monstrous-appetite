@@ -1,0 +1,128 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Backgrounds/kitchen_layout_alpha.jpg" type="Texture" id=1]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Kitchen.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Notebook.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/PausePopup.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Notebook/NotebookSheet.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 341.317, 139.776 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 387.409, 126.693 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 123.326, 199.303 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 93.1838, 17.8615 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 960, 50 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 960, 10 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 30, 540 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 30, 540 )
+
+[node name="Kitchen" type="Node"]
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = -0.000729942
+anchor_top = 0.000801369
+anchor_right = -0.000729942
+anchor_bottom = 0.000801369
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+visible = false
+
+[node name="StartPos" type="Position2D" parent="."]
+position = Vector2( 300, 360 )
+
+[node name="OrderTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="RoundTimer" type="Timer" parent="."]
+
+[node name="Island" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Island"]
+position = Vector2( 997.615, 730.433 )
+shape = SubResource( 1 )
+
+[node name="Counter" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Counter"]
+position = Vector2( 1102.32, 288.783 )
+shape = SubResource( 2 )
+
+[node name="Fridge" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fridge"]
+position = Vector2( 591.555, 216.626 )
+shape = SubResource( 3 )
+
+[node name="Door" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+position = Vector2( 357.304, 201.145 )
+shape = SubResource( 4 )
+
+[node name="TopWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopWall"]
+position = Vector2( 960.052, 165.128 )
+shape = SubResource( 5 )
+
+[node name="BottomWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomWall"]
+position = Vector2( 963.19, 1069.16 )
+shape = SubResource( 6 )
+
+[node name="LeftWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+position = Vector2( 128.895, 541.287 )
+rotation = 0.073044
+shape = SubResource( 7 )
+
+[node name="RightWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+position = Vector2( 1821.84, 543.942 )
+rotation = -0.0786511
+shape = SubResource( 8 )
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+
+[node name="Notebook" parent="." instance=ExtResource( 5 )]
+visible = false
+
+[node name="PausePopup" parent="." instance=ExtResource( 6 )]
+pause_mode = 2
+visible = false
+
+[node name="NotebookLight" type="Light2D" parent="."]
+position = Vector2( 58.8687, 59.9184 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 7 )
+color = Color( 1, 1, 0, 1 )
+energy = 0.0
+[connection signal="timeout" from="OrderTimer" to="." method="_on_OrderTimer_timeout"]
+[connection signal="timeout" from="RoundTimer" to="." method="_on_RoundTimer_timeout"]
